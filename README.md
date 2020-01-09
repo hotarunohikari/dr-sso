@@ -4,6 +4,7 @@ single sign on
 
 1. 对外接口使用示例：
 
+```
 <?php
 use dr\tp5\sso\SSO;
 class Index
@@ -15,11 +16,12 @@ class Index
    SSO::pullToken($id); //取出指定ID的token并删除，不存在则返回false
    SSO::delToken($id); //删除指定ID的token,删除成功返回true,否则返回false
 }
-
+```
 2. 配置文件使用示例(可选)：
 
 以TP5.1为例,在框架的config目录中新建php文件,命名为sso.php, 文件中写入如下内容：
 
+```
    return [
         'expire'     => 60 * 60 * 120, // token缓存时间
         'sso'        => 'sso',         // 指定redis中存储token的namespace
@@ -30,5 +32,6 @@ class Index
         'timeout'    => 0,
         'persistent' => false,
    ];
-   
+ ```
+ 
    默认的缓存时间为12小时

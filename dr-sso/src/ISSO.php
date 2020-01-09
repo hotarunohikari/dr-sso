@@ -23,4 +23,10 @@ interface ISSO
     // 检查是否冲突
     public function conflict($id, $token): bool;
 
+    // 取出token 并清空
+    public function pullToken($id);
+
+    // 删除token
+    public function delToken($id);
+
 }

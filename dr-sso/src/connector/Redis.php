@@ -64,5 +64,13 @@ class Redis implements ISSO
         return $this->redis->hGet($this->options['sso'], $id) != $token;
     }
 
+    public function pullToken($id) {
+        $token = $this->redis->hGet($this->options['sso'], $id);
+        $this->redis->hDel($this->options['sso'], $id);
+        return $token;
+    }
 
+    public function delToken($id) {
+        return $this->redis->hDel($this->options['sso'], $id) >= 0; //空删0,实删1
+    }
 }

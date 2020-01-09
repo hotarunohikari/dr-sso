@@ -1,5 +1,5 @@
 {
-    "name": "hotarunohikari/sso",
+    "name": "hotarunohikari/dr-sso",
     "description": "single sign on",
     "type": "composer",
     "license": "MIT",
@@ -15,7 +15,7 @@
 	},
 	"autoload": {
         "psr-4": {
-            "dr\\sso\\": "dr/sso"
+            "dr\\tp5\\sso\\": "src"
         }
     }
 }

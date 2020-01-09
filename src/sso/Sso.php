@@ -1,6 +1,6 @@
 <?php
 
-namespace dr\tp5;
+namespace dr\sso;
 
 class Sso{
 	static function test(){

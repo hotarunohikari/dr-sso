@@ -1,5 +1,5 @@
 {
-    "name": "dr/sso",
+    "name": "hotarunohikari/dr",
     "description": "single sign on",
     "type": "library",
     "license": "MIT",
@@ -8,14 +8,14 @@
             "name": "hotarunohikari",
             "email": "machigaisagashi@163.com"
         }
-	 	],
-	"minimum-stability": "dev",
+    ],
+    "minimum-stability": "dev",
     "require": {
-			"php": ">= 7.0.0"
-		},
-	"autoload":{
-		  "psr-4":{
-				"dr\\tp5\\" : "src/dr/tp5"
-			}
-		}
+        "php": ">=7.0.0"
+	},
+	"autoload": {
+        "psr-4": {
+            "sso\\": "src/sso"
+        }
+    }
 }

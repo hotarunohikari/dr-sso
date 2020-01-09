@@ -15,7 +15,7 @@
 	},
 	"autoload": {
         "psr-4": {
-            "sso\\": "src/sso"
+            "dr\\sso\\": "dr/sso"
         }
     }
 }

@@ -1,7 +1,6 @@
 {
     "name": "hotarunohikari/dr-sso",
     "description": "for single sign on",
-    "type": "dr-composer",
     "license": "MIT",
     "authors": [
         {

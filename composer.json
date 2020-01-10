@@ -16,7 +16,7 @@
         "ext-mbstring": "*",
         "ext-bcmath": "*",
 		"topthink/think-installer":"1.0.*",
-        "topthink/framework": "5.0.*"
+        "topthink/framework": "~5.0.24"
 	},
 	"autoload": {
         "psr-4": {

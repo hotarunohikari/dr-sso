@@ -6,7 +6,7 @@ single sign on
 
 ```php
 <?php
-use dr\tp5\sso\SSO;
+use dr\sso\SSO;
 class Index
 {
    SSO::getToken($id); //获取指定ID的token,不存在则返回false

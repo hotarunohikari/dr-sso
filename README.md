@@ -9,12 +9,14 @@ single sign on
 use dr\sso\SSO;
 class Index
 {
-   SSO::getToken($id); //获取指定ID的token,不存在则返回false
-   SSO::setToken($id, $token); //设置指定ID的token值,如果ID已经有值则不进行赋值操作，设置成功返回true,否则返回false
-   SSO::setTokenForce($id, $token); // 强制设置指定ID的token值,设置成功返回true,否则返回false
-   SSO::conflict($id, $token); // 检查已有token是否和给定token冲突,若冲突则返回true,否则返回false
-   SSO::pullToken($id); //取出指定ID的token并删除，不存在则返回false
-   SSO::delToken($id); //删除指定ID的token,删除成功返回true,否则返回false
+   function index(){
+      SSO::getToken($id); //获取指定ID的token,不存在则返回false
+      SSO::setToken($id, $token); //设置指定ID的token值,如果ID已经有值则不进行赋值操作，设置成功返回true,否则返回false
+      SSO::setTokenForce($id, $token); // 强制设置指定ID的token值,设置成功返回true,否则返回false
+      SSO::conflict($id, $token); // 检查已有token是否和给定token冲突,若冲突则返回true,否则返回false
+      SSO::pullToken($id); //取出指定ID的token并删除，不存在则返回false
+      SSO::delToken($id); //删除指定ID的token,删除成功返回true,否则返回false
+   }
 }
 ```
 

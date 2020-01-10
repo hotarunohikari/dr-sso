@@ -20,15 +20,12 @@
 	},
 	"autoload": {
         "psr-4": {
-            "dr\\tp5\\sso\\": "src"
+            "dr\\sso\\": "src"
         }
     },
 	"extra": {
         "think-config": {
             "sso": "src/config.php"
-        },
-		"branch-alias": {
-            "dev-master": "1.0.x-dev"
         }
     }
 }

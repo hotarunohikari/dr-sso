@@ -5,9 +5,9 @@
  * description : 单点登录的redis连接实现
  */
 
-namespace dr\tp5\sso\connector;
+namespace dr\sso\connector;
 
-use dr\tp5\sso\ISSO;
+use dr\sso\ISSO;
 use Exception;
 
 class Redis implements ISSO

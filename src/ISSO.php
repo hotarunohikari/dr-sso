@@ -5,7 +5,7 @@
  * description :
  */
 
-namespace dr\tp5\sso;
+namespace dr\sso;
 
 // 单点登录
 interface ISSO

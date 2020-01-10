@@ -5,7 +5,7 @@
  * description : 单点登录的主类
  */
 
-namespace dr\tp5\sso;
+namespace dr\sso;
 
 use think\helper\Str;
 

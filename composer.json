@@ -1,7 +1,7 @@
 {
     "name": "hotarunohikari/dr-sso",
-    "description": "single sign on",
-    "type": "dr",
+    "description": "for single sign on",
+    "type": "composer-plugin",
     "license": "MIT",
     "authors": [
         {
@@ -20,6 +20,14 @@
 	"autoload": {
         "psr-4": {
             "dr\\tp5\\sso\\": "src"
+        }
+    },
+	"extra": {
+        "think-config": {
+            "sso": "src/config.php"
+        },
+		"branch-alias": {
+            "dev-master": "1.0.0-dev"
         }
     }
 }

@@ -30,7 +30,7 @@ class SSO
         $options = config('sso');
         $type    = !empty($options['connector']) ? $options['connector'] : 'Redis';
         if (!isset($this->connector)) {
-            $class           = false !== strpos($type, '\\') ? $type : '\\dr\\tp5\\sso\\connector\\' . Str::studly($type);
+            $class           = false !== strpos($type, '\\') ? $type : '\\dr\\sso\\connector\\' . Str::studly($type);
             $this->connector = new $class($options);
         }
         return $this->connector;

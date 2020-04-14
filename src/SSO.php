@@ -1,7 +1,5 @@
 <?php
 /**
- * author      : Qttx 摩羯Ж'
- * mtime       : 2020/1/9 13:52
  * description : 单点登录的主类
  */
 
